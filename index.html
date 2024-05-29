@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="generate-password">
+            <div class="length-input">
+                <h4>
+                    <span>Input the length of your password:</span>
+                    <span dir="rtl">قم بإدخال طول كلمة المرور الخاصة بك:</span>
+                </h4>
+                <input type="number" class="length" name="length">
+            </div>
+            <div class="letters">
+                <h4>
+                    <span>What does contains</span>
+                    <span dir="rtl">على ماذا تحتوي:</span>
+                </h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="letter" class="letter-check" value="Capital">
+                        <span>Capital</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="letter" class="letter-check" value="Small">
+                        <span>Small</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="letter" class="letter-check" value="Number">
+                        <span>Numbers</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="letter" class="letter-check" value="Symbols">
+                        <span>Symbols</span>
+                    </li>
+                </ul>
+                <input type="button" value="Generate" class="generate">
+            </div>
+        </div>
+        <div class="password-result"></div>
+        <img src="" alt="">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
